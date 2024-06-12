@@ -1,0 +1,152 @@
+/* Previous CSS code */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-input:focus {
+  border-color: #c5aeff; /* Highlight border color on focus */
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.todo-btn:hover {
+  background: #6e3fc7; /* Darken color on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.Todo:hover {
+  background: #6e3fc7; /* Darken color on hover */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted,
+.completed {
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.incompleted:hover,
+.completed:hover {
+  color: #c5aeff; /* Highlight color on hover */
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* New CSS for div containing sorting and filtering elements */
+.FilterSortWrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: #fff;
+  margin-right: 0.5rem;
+  padding: 0.5rem; /* Adding padding */
+}
+
+select {
+  padding: 0.5rem;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e3fc7;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background color and text color transition */
+}
+
+select:hover {
+  background-color: #8758ff; /* Darken color on hover */
+}
